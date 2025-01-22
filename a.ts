@@ -89,6 +89,7 @@ const graph = new StateGraph(StateAnnotation)
   .addEdge("generate", "__end__")
   .compile();
 
+// Input test
 let inputs = { question: "What is Task Decomposition?" };
 
 const stream = await graph.stream(inputs, { streamMode: "messages" });
